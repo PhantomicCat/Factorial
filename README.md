@@ -9,3 +9,7 @@ Most likely only text files
 
 ## This program just for fun
 "Factorial" was created with the goal of improving my programming skills, so this program is created just for fun.
+
+## Build warning
+
+Preview builds are extremely unstable, so be prepared for anything!!
