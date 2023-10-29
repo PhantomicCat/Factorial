@@ -80,7 +80,26 @@ def About_Window ():
     L4 = tk.Label (About, text = "Created by PhantomicCat", font = ("Montserrat Bold", 15), bg = "white")
     L4.pack (pady = 60)
 
-    L5 = tk.Label (About, text = "This app is just for fun, so if you want to modify it to suit your needs (Or even improve it), just Fork the project's GitHub page.", font = ("Montserrat Medium", 8), bg = 'white')
-    L5.place (x = 5, y = 320)
+    L5 = tk.Label (About, text = "This app is just for fun, so if you want to modify it to suit your needs (Or even improve it), just Fork it on Project's GitHub", font = ("Montserrat Medium", 8), bg = 'white')
+    L5.place (x = 20, y = 320)
 
     About.mainloop ()
+
+def Editor ():
+
+    messagebox.showwarning ("Editor warning", "Warning! Editor is not ready, right now only the ability to write something is available without the ability to save to a file!")
+
+    Editor_Window = tk.Tk ()
+    Editor_Window.configure (bg = 'white')
+    Editor_Window.title ("Factorial Editor")
+    Editor_Window.geometry ("1000x650")
+
+    Text_Box = tk.Text (Editor_Window, width = 100, font = ("Montserrat Bold", 12))
+    Text_Box.pack ()
+
+    Save_button = ttk.Button (Editor_Window, text = "Save")
+    Save_button.config (state = "disabled")
+
+    Save_button.place (x = 850, y = 550, width = 130, height = 75)
+
+    Editor_Window.mainloop ()
