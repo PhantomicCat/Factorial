@@ -1,10 +1,10 @@
 from tkinter import ttk
 import tkinter as tk
 
-from Functions import File_choice
-from Functions import About_Window
-from Functions import GitHub
-from Functions import Editor
+from Modules.Functions import File_choice
+from Modules.Functions import About_Window
+from Modules.Functions import GitHub
+from Modules.Editor import Editor
 
 # Main window
 
@@ -32,7 +32,7 @@ About_Button = ttk.Button (text = "About", command = About_Window)
 About_Button.place (x = 550, y = 400, width = 295, height = 75)
 
 #! Editor Button
-Editor_Button = ttk.Button (text = "Editor (In Development)", command = Editor)
+Editor_Button = ttk.Button (text = "Editor", command = Editor)
 Editor_Button.place (x = 550, y = 200, width = 295, height = 75)
 
 # Labels
@@ -43,7 +43,7 @@ L1.place (x = 160, y = 200)
 L2 = tk.Label (text = "[ ! ] Preview Build", font = ("Montserrat Medium", 18), bg = 'white')
 L2.place (x = 160, y = 270)
 
-Version = tk.Label (text = "Version 0.1.1 Preview", font = ("Montserrat Medium", 10), bg = 'white')
+Version = tk.Label (text = "Version 0.2 Preview", font = ("Montserrat Medium", 10), bg = 'white')
 Version.place (y = 575, x = 755)
 
 Main.mainloop ()
