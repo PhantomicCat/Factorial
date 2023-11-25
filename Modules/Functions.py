@@ -80,7 +80,7 @@ def About_Window ():
     L4 = tk.Label (About, text = "Created by PhantomicCat", font = ("Montserrat Bold", 15), bg = "white")
     L4.pack (pady = 60)
 
-    L5 = tk.Label (About, text = "This app is just for fun, so if you want to modify it to suit your needs (Or even improve it), just Fork the project's GitHub page.", font = ("Montserrat Medium", 8), bg = 'white')
-    L5.place (x = 5, y = 320)
+    L5 = tk.Label (About, text = "This app is just for fun, so if you want to modify it to suit your needs (Or even improve it), just Fork it on Project's GitHub", font = ("Montserrat Medium", 8), bg = 'white')
+    L5.place (x = 20, y = 320)
 
     About.mainloop ()
